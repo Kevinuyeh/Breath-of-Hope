@@ -29,17 +29,17 @@ function Navbar() {
         
         <ul className='hidden md:flex md:items-center md:justify-center w-full'>
           <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/'>Home Page</Link></li>
-          <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/about'>Latest Videos</Link></li>
-          <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/shop'>Book Session</Link></li>
-          <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/contact'>Join Our Community</Link></li>
-          <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/contact'>Leader Board</Link></li>
+          <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/'>Latest Videos</Link></li>
+          <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/'>Book Session</Link></li>
+          <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/'>Join Our Community</Link></li>
+          <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/'>Leader Board</Link></li>
         </ul>
 
         
         <div className='hidden md:flex justify-center items-center md:w-1/3'>
           <ul className='flex'>
-            <li className='mx-4 my-6 md:my-0 text-xl duration-500 border rounded-lg px-4 md:px-6 hover:text-gray-400'><Link to='/contact'>Log In</Link></li>
-            <li className='mx-4 my-6 md:my-0 md:text-xl duration-500 bg-dark rounded-lg md:px-6 hover:text-gray-400'><Link to='/contact'>Sign Up</Link></li>
+            <li className='mx-4 my-6 md:my-0 text-xl duration-500 border rounded-lg px-4 md:px-6 hover:text-gray-400'><Link to='/'>Log In</Link></li>
+            <li className='mx-4 my-6 md:my-0 md:text-xl duration-500 bg-dark rounded-lg md:px-6 hover:text-gray-400'><Link to='/'>Sign Up</Link></li>
           </ul>
         </div>
 
@@ -50,12 +50,12 @@ function Navbar() {
           } transition-transform duration-300 ease-in-out md:hidden`}
         >
           <li className='mx-4 my-6 text-xl'><Link to='/'>Home Page</Link></li>
-          <li className='mx-4 my-6 text-xl'><Link to='/about'>Latest Videos</Link></li>
-          <li className='mx-4 my-6 text-xl'><Link to='/shop'>Book Session</Link></li>
-          <li className='mx-4 my-6 text-xl'><Link to='/contact'>Join Our Community</Link></li>
-          <li className='mx-4 my-6 text-xl'><Link to='/contact'>Leader Board</Link></li>
-          <li className='mx-4 my-6 text-xl'><Link to='/contact'>Log In</Link></li>
-          <li className='mx-4 my-6 text-xl'><Link to='/contact'>Sign Up</Link></li>
+          <li className='mx-4 my-6 text-xl'><Link to='/'>Latest Videos</Link></li>
+          <li className='mx-4 my-6 text-xl'><Link to='/'>Book Session</Link></li>
+          <li className='mx-4 my-6 text-xl'><Link to='/'>Join Our Community</Link></li>
+          <li className='mx-4 my-6 text-xl'><Link to='/'>Leader Board</Link></li>
+          <li className='mx-4 my-6 text-xl'><Link to='/'>Log In</Link></li>
+          <li className='mx-4 my-6 text-xl'><Link to='/'>Sign Up</Link></li>
         </ul>
       </nav>
     </div>
