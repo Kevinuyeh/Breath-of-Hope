@@ -108,7 +108,7 @@ function LatestVideo() {
              className='rounded-md w-[300px] mx-auto' />
              <h1 className='mt-3 mb-3 text-center font-semibold'>{item.name}</h1>
              <p className='text-center mx-auto max-w-sm p-2'>{item.text}</p>
-             <Link to={`/item/${item.id}`}><button className="mx-auto flex mt-3 mb-3 items-center bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition duration-300">
+             <Link to={`/item/${item.id}`}><button className="mx-auto flex mt-3 mb-3 items-center bg-red-600 text-white font-semibold py-2 min-w-full max-w-md justify-center text-sm md:py-2 md:px-4 rounded-lg hover:bg-red-700 transition duration-300">
       <FaYoutube className="mr-2" size={20} />
       Watch on YouTube
     </button></Link>
