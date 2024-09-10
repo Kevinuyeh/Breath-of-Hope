@@ -46,8 +46,8 @@ function Community() {
       ></div>
 
       {/* Content Over the Background */}
-        <h1 className="text-white font-poppins text-1xl p-6 mx-10 md:text-2xl">Join Our WhatsApp Community</h1>
-      <div className="relative flex flex-col items-center justify-center">
+        {/* <h1 className="text-white font-poppins text-1xl p-6 mx-10 md:text-2xl">Join Our WhatsApp Community</h1> */}
+      <div className="relative flex flex-col items-center justify-center mt-10 md:mt-20">
         <img src={Img} alt="/img" className="w-[120px] items-center mx-auto justify-center rounded-lg" />
         <h1 className="text-white mt-5 font-poppins text-2xl text-center md:text-3xl">Join Our WhatsApp Community</h1>
         <p className="font-poppins text-center mt-5 text-xl text-lgray">

@@ -14,7 +14,7 @@ function Hero() {
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit voluptates, natus necessitatibus numquam qui ratione eveniet dolorum, eum nostrum incidunt aspernatur voluptas modi? Illo, vel natus eos recusandae aut neque qui, quas enim reiciendis error velit, hic nihil? Quam asperiores minima nesciunt porro fuga, deserunt nihil nemo iste quisquam recusandae!
         </p>
         <Link to="/" className="flex justify-center md:justify-start">
-          <button className="mt-5 md:mt-10 bg-purp text-white p-3 rounded-lg px-5 md:px-20 text-center tracking-wide text-lg md:text-xl">
+          <button className="mt-5 md:mt-10 bg-purp text-white p-3 rounded-lg px-5 md:px-20 text-center tracking-wide md:text-xl">
             Join Our WhatsApp Community
           </button>
         </Link>

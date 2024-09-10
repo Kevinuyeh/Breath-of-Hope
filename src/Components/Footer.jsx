@@ -88,8 +88,8 @@ function Footer() {
         </div>
 
         
-        <div className='flex flex-col items-center w-full md:w-[30%] mt-8 md:mt-0'>
-          <h1 className='text-white text-xl text-center'>BE A PART OF OUR AMAZING COMMUNITY!</h1>
+        <div className='flex flex-col items-center w-full md:w-[30%] mt-8 md:mt-28'>
+          <h1 className='text-white text-center'>BE A PART OF OUR AMAZING COMMUNITY!</h1>
           <img src={WhatsImg} alt='/img' className='w-[150px] mt-4' />
           <Link to="/" className="flex justify-center">
             <button className="mt-5 hover:duration-500 hover:bg-white hover:text-bluebg bg-transparent border border-white text-white p-3 rounded-lg px-5  text-center mx-auto tracking-wide">
