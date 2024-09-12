@@ -71,7 +71,7 @@ function Footer() {
           </p>
           <button
             type="submit"
-            className="bg-lightblue text-bluebg w-[200px] text-center items-center justify-center flex mx-auto py-2 px-4 rounded-lg transition duration-300 mt-6"
+            className="bg-lightblue text-xl hover:bg-white text-bluebg w-[200px] text-center items-center justify-center flex mx-auto py-2 px-4 rounded-lg transition duration-300 mt-6"
           >
             Book Session
           </button>
