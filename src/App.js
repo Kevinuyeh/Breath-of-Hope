@@ -9,6 +9,7 @@ import AdminLeaderBoard from "./Admin/AdminLeaderBoard";
 import UserLeaderBoard from "./Admin/UserLeaderBoard";
 import SessionPage from "./Pages/SessionPage";
 import ScrollToTop from "./Components/ScrollToTop";
+import UploadVideo from "./Admin/UploadVideo";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="adminleaderboard" element={<AdminLeaderBoard/>} />
           <Route path="userleaderboard" element={<UserLeaderBoard/>} />
           <Route path="sessionpage" element={<SessionPage/>} />
+          <Route path="uploadvideo" element={<UploadVideo/>} />
         </Routes>
         </ScrollToTop>
       </BrowserRouter>

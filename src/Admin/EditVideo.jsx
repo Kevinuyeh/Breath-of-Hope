@@ -225,6 +225,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { FaSearch, FaChevronDown, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import { FiEdit, FiUpload } from 'react-icons/fi';
 import UploadData from './UploadInput';
+import { Link } from 'react-router-dom';
 
 function EditVideo() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -382,20 +383,14 @@ function EditVideo() {
                 </div>
 
                 <div className='md:ml-auto mx-auto'>
-                    <button
+                   <Link to='/uploadvideo'> <button
                         className='flex items-center hover:bg-white hover:text-bluebg border text-center border-bluebg bg-bluebg rounded-lg text-white p-2 mx-4 space-x-2'
-                        onClick={handleUploadClick}
+                       
                     >
                         <FiUpload size={20} />
                         <h1>Upload New Video</h1>
-                    </button>
-                    <input
-                        type="file"
-                        accept="video/*,image/*"
-                        ref={fileInputRef}
-                        onChange={handleFileChange}
-                        className="hidden"
-                    />
+                    </button></Link>
+                    
                 </div>
             </div>
 
