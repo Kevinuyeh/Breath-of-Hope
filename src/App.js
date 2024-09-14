@@ -8,11 +8,13 @@ import AdminHome from "./Admin/AdminHome";
 import AdminLeaderBoard from "./Admin/AdminLeaderBoard";
 import UserLeaderBoard from "./Admin/UserLeaderBoard";
 import SessionPage from "./Pages/SessionPage";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
+      <ScrollToTop>
         <Routes>
           <Route path="/" index element={<Home />} />
           <Route path="/admin" element={<AdminHome/>} />
@@ -23,6 +25,7 @@ function App() {
           <Route path="userleaderboard" element={<UserLeaderBoard/>} />
           <Route path="sessionpage" element={<SessionPage/>} />
         </Routes>
+        </ScrollToTop>
       </BrowserRouter>
     </div>
   );

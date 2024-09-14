@@ -126,7 +126,7 @@ function AdminLeaderBoard() {
     };
 
     return (
-        <div className='w-full font-poppins'>
+        <div className='w-full font-poppins pb-5'>
             <Nav />
             <div className='flex flex-col mx-auto'>
                 <h1 className='text-purp font-semibold text-2xl md:text-3xl font-poppins text-center mt-5'>
