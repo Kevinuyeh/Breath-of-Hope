@@ -3,6 +3,7 @@ import wave from '../Assets/wave.png';
 import { FiUpload } from "react-icons/fi";
 import { FaMedal } from "react-icons/fa";
 import heroimg from '../Assets/Group 8.png';
+import { Link } from 'react-router-dom';
 
 function AdminHero() {
     // Create a reference to the hidden file input
@@ -53,10 +54,10 @@ function AdminHero() {
                         />
 
                         {/* Button to View Leadership Board */}
-                        <button className='flex items-center border border-gray-800 hover:bg-bluebg hover:text-white bg-white rounded-lg text-bluebg p-2 mx-4 space-x-2'>
+                       <Link to='/adminleaderboard'><button className='flex items-center border border-gray-800 hover:bg-bluebg hover:text-white bg-white rounded-lg text-bluebg p-2 mx-4 space-x-2'>
                             <FaMedal size={20} />
                             <h1>View Leadership board</h1>
-                        </button>
+                        </button></Link>
                     </div>
                 </div>
 

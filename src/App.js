@@ -6,6 +6,8 @@ import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
 import AdminHome from "./Admin/AdminHome";
 import AdminLeaderBoard from "./Admin/AdminLeaderBoard";
+import UserLeaderBoard from "./Admin/UserLeaderBoard";
+import SessionPage from "./Pages/SessionPage";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="login" element={<Login/>} />
           <Route path="signup" element={<SignUp/>} />
           <Route path="adminleaderboard" element={<AdminLeaderBoard/>} />
+          <Route path="userleaderboard" element={<UserLeaderBoard/>} />
+          <Route path="sessionpage" element={<SessionPage/>} />
         </Routes>
       </BrowserRouter>
     </div>

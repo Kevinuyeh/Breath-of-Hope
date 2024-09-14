@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FaHome, FaVideo, FaHandshake, FaUsers, FaMedal } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -11,6 +11,12 @@ function Navbar() {
   const handleNav = () => {
     setNav(!nav);
   };
+
+  // const latestvideo1= useRef(null);
+  
+  // const scrollToVideo= () => {
+  //   latestvideo1.current.scrollIntoView({ behavior: 'smooth' });
+  // };
 
   return (
     <div>
@@ -32,9 +38,9 @@ function Navbar() {
         <ul className='hidden md:flex md:items-center md:justify-center w-full'>
           <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/'>Home Page</Link></li>
           <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/'>Latest Videos</Link></li>
-          <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/'>Book Session</Link></li>
+          <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/sessionpage'>Book Session</Link></li>
           <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/'>Join Our Community</Link></li>
-          <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/leaderboard'>Leader Board</Link></li>
+          <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/userleaderboard'>Leader Board</Link></li>
         </ul>
 
 
@@ -67,7 +73,7 @@ function Navbar() {
           </li>
           <li className='mx-4 my-6 text-xl hover:bg-lightblue hover:text-bluebg border-b-2 border-gray-500 p-2 flex items-center'>
             <FaHandshake className='mr-2' /> {/* Handshake icon */}
-            <Link to='/book-session'>Book Session</Link>
+            <Link to='/sessionpage'>Book Session</Link>
           </li>
           <li className='mx-4 my-6 text-xl hover:bg-lightblue hover:text-bluebg border-b-2 border-gray-500 p-2 flex items-center'>
             <FaUsers className='mr-2' /> {/* Group icon */}
@@ -75,7 +81,7 @@ function Navbar() {
           </li>
           <li className='mx-4 my-6 text-xl hover:bg-lightblue hover:text-bluebg border-b-2 border-gray-500 p-2 flex items-center'>
             <FaMedal className='mr-2' /> {/* Medal icon */}
-            <Link to='/leaderboard'>Leader Board</Link>
+            <Link to='/userleaderboard'>Leader Board</Link>
           </li>
           <li className='mx-4 my-6 text-xl hover:bg-lightblue hover:text-bluebg border-b-2 border-gray-500 p-2'>
             <Link to='/login'>Log In</Link>
