@@ -101,7 +101,7 @@ function UploadVideo() {
       </div>
       <hr className="border-t border-gray-300 w-full mt-2" />
 
-      <div className="flex flex-col items-center mt-8">
+      <div className="flex flex-col p-4 items-center mt-8">
         {/* Video Title Input */}
         <div className="w-full max-w-md lg:max-w-2xl mb-6">
           <label className="block text-gray-700 text-lg mb-2 tracking-wider">Video Title</label>
