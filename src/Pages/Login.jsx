@@ -51,9 +51,9 @@ function Login() {
             </div>
 
             <button className="flex items-center justify-center w-full max-w-sm mx-auto my-4 p-3 rounded-lg hover:bg-gray-100">
-              
+
               <img
-                src={Gimg} 
+                src={Gimg}
                 alt="Google Icon"
                 className="w-6 h-6 mr-2"
               />

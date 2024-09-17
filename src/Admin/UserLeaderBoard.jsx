@@ -8,38 +8,38 @@ function UserLeaderBoard() {
     const [searchTerm, setSearchTerm] = useState('');
     const [currentPage, setCurrentPage] = useState(1);
 
-    // Constants for pagination
+    
     const itemsPerPage = 15;
     const totalPages = Math.ceil(adminleaderboardData.length / itemsPerPage);
 
-    // Handle search input change
+    
     const handleSearchChange = (e) => {
         setSearchTerm(e.target.value);
-        setCurrentPage(1); // Reset to page 1 when searching
+        setCurrentPage(1); 
     };
 
-    // Filter the data based on the search term
+    
     const filteredData = adminleaderboardData.filter((user) =>
         user.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-    // Recalculate the number of pages based on the filtered data
+    
     const totalFilteredPages = Math.ceil(filteredData.length / itemsPerPage);
 
-    // Calculate the data to display on the current page
+    
     const currentData = filteredData.slice(
         (currentPage - 1) * itemsPerPage,
         currentPage * itemsPerPage
     );
 
-    // Move to the previous page
+    
     const goToPreviousPage = () => {
         if (currentPage > 1) {
             setCurrentPage(currentPage - 1);
         }
     };
 
-    // Move to the next page
+    
     const goToNextPage = () => {
         if (currentPage < totalFilteredPages) {
             setCurrentPage(currentPage + 1);
@@ -84,7 +84,7 @@ function UserLeaderBoard() {
                         {currentData.length > 0 ? (
                             currentData.map((user, index) => (
                                 <tr key={user.id} className="hover:bg-gray-100">
-                                    {/* Rank with Medal Icons for Top 3 */}
+                                    
                                     <td className='py-2 px-4 border-b text-center'>
                                         {index + (currentPage - 1) * itemsPerPage === 0 ? (
                                             <FaMedal className='text-yellow-500 text-xl inline' />
@@ -114,9 +114,9 @@ function UserLeaderBoard() {
                 </table>
             </div>
 
-            {/* Pagination */}
+            
             <div className="flex justify-center mt-4 items-center space-x-4">
-                {/* Previous Button */}
+                
                 <button
                     onClick={goToPreviousPage}
                     disabled={currentPage === 1}
@@ -127,7 +127,7 @@ function UserLeaderBoard() {
                     <FaChevronLeft />
                 </button>
 
-                {/* Page Numbers */}
+                
                 <div className="flex space-x-2">
                     {[...Array(totalFilteredPages)].map((_, pageIndex) => (
                         <button
@@ -142,7 +142,7 @@ function UserLeaderBoard() {
                     ))}
                 </div>
 
-                {/* Next Button */}
+                
                 <button
                     onClick={goToNextPage}
                     disabled={currentPage === totalFilteredPages}

@@ -5,7 +5,7 @@ import HomeIMG from '../Assets/home page image.png';
 function Hero() {
   return (
     <div className="w-full h-screen flex flex-col md:flex-row">
-      
+
       <div className="w-full md:w-1/2 bg-white flex flex-col justify-center px-5 py-5 md:px-10 md:py-10">
         <h1 className="text-darkpurp font-poppins text-3xl md:text-6xl font-bold mt-5 md:mt-10 text-center md:text-left">
           Welcome To Breath Of Hope
@@ -20,7 +20,7 @@ function Hero() {
         </Link>
       </div>
 
-      
+
       <div className="w-full md:w-1/2 relative h-64 md:h-auto">
 
         <div
@@ -30,10 +30,10 @@ function Hero() {
             background: 'linear-gradient(to right, rgba(255, 255, 255, 0.9), transparent)',
           }}
         ></div>
-        
+
         <div className="absolute inset-0 bg-black opacity-10 z-10"></div>
-        
-        <img 
+
+        <img
           src={HomeIMG}
           className="w-full h-full object-cover z-0"
           alt="/img"

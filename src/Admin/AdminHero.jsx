@@ -6,24 +6,6 @@ import heroimg from '../Assets/Group 8.png';
 import { Link } from 'react-router-dom';
 
 function AdminHero() {
-    // Create a reference to the hidden file input
-    // const fileInputRef = useRef(null);
-
-    // // Function to handle button click and open file picker
-    // const handleUploadClick = () => {
-    //     if (fileInputRef.current) {
-    //         fileInputRef.current.click();
-    //     }
-    // };
-
-    // // Function to handle file selection
-    // const handleFileChange = (event) => {
-    //     const file = event.target.files[0];
-    //     if (file) {
-    //         console.log("Selected file:", file);
-    //         // Add logic here to handle the selected file, like uploading or displaying it
-    //     }
-    // };
 
     return (
         <div className='w-full font-poppins'>
@@ -35,7 +17,7 @@ function AdminHero() {
                     </div>
 
                     <div className='flex items-center justify-center space-x-5 mt-10 md:mt-20'>
-                        {/* Button to Upload Video */}
+                        
                        <Link to='/uploadvideo'> <button 
                             className='flex items-center hover:bg-white hover:text-bluebg border border-bluebg bg-bluebg rounded-lg text-white p-2 mx-4 space-x-2'
                             
@@ -44,16 +26,7 @@ function AdminHero() {
                             <h1>Upload New Video</h1>
                         </button></Link>
 
-                        {/* Hidden input for file upload */}
-                        {/* <input
-                            type="file"
-                            accept="video/*,image/*"  // Accept both videos and images
-                            ref={fileInputRef}
-                            onChange={handleFileChange}
-                            className="hidden"  // Hide the input
-                        /> */}
-
-                        {/* Button to View Leadership Board */}
+                        
                        <Link to='/adminleaderboard'><button className='flex items-center border border-gray-800 hover:bg-bluebg hover:text-white bg-white rounded-lg text-bluebg p-2 mx-4 space-x-2'>
                             <FaMedal size={20} />
                             <h1>View Leadership board</h1>

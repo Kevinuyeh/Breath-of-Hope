@@ -8,7 +8,7 @@ function LatestVideo() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTopic, setSelectedTopic] = useState('');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  
+
   const dropdownRef = useRef(null);
 
   const topics = ['Depression', 'Lust', 'Anger', 'Finances', 'Discipline'];
@@ -103,24 +103,24 @@ function LatestVideo() {
       <div className='max-w-[1240px] mt-10 md:mt-20 grid grid-cols-2 md:grid-cols-3 gap-5 p-4 mx-auto'>
         {videoData.map((item, id) => (
 
-        <div key={id} className='font-poppins flex flex-col border py-2'>
+          <div key={id} className='font-poppins flex flex-col border py-2'>
             <img src={item.image} alt='/img'
-             className='rounded-md w-[300px] mx-auto' />
-             <h1 className='mt-3 mb-3 text-center font-semibold'>{item.name}</h1>
-             <p className='text-center mx-auto max-w-sm p-2'>{item.text}</p>
-             <Link to={`/item/${item.id}`}><button className="mx-auto flex mt-3 mb-3 items-center bg-red-600 text-white font-semibold py-2 min-w-full max-w-md justify-center text-sm md:py-2 md:px-4 rounded-lg hover:bg-red-700 transition duration-300">
-      <FaYoutube className="mr-2" size={15} />
-      Watch on YouTube
-    </button></Link>
-        </div>
+              className='rounded-md w-[300px] mx-auto' />
+            <h1 className='mt-3 mb-3 text-center font-semibold'>{item.name}</h1>
+            <p className='text-center mx-auto max-w-sm p-2'>{item.text}</p>
+            <Link to={`/item/${item.id}`}><button className="mx-auto flex mt-3 mb-3 items-center bg-red-600 text-white font-semibold py-2 min-w-full max-w-md justify-center text-sm md:py-2 md:px-4 rounded-lg hover:bg-red-700 transition duration-300">
+              <FaYoutube className="mr-2" size={15} />
+              Watch on YouTube
+            </button></Link>
+          </div>
         ))}
       </div>
-        <div className="mt-5 flex mx-auto justify-center items-center gap-2">
-  <Link className="flex items-center gap-2">
-    <h2 className="text-blue2 font-poppins">See More Videos</h2>
-    <FaChevronDown size={12} className="text-blue2" />
-  </Link>
-</div>
+      <div className="mt-5 flex mx-auto justify-center items-center gap-2">
+        <Link className="flex items-center gap-2">
+          <h2 className="text-blue2 font-poppins">See More Videos</h2>
+          <FaChevronDown size={12} className="text-blue2" />
+        </Link>
+      </div>
 
     </div>
   );

@@ -45,33 +45,33 @@ function SignUp() {
 
 
                         </div>
-                            <div className="w-full flex flex-col">
-                                <label htmlFor="email" className="text-gray-700 mb-1 mt-5">
-                                    Email Address
-                                </label>
-                                <input
-                                    id="email"
-                                    type="email"
-                                    className="p-2 border border-gray-300 rounded-lg"
-                                />
-                                <label htmlFor="password" className="text-gray-700 mb-1 mt-5">
-                                    Password
-                                </label>
-                                <input
-                                    className="p-2 border border-gray-300 rounded-lg"
-                                    id="password"
-                                    type="password"
-                                />
+                        <div className="w-full flex flex-col">
+                            <label htmlFor="email" className="text-gray-700 mb-1 mt-5">
+                                Email Address
+                            </label>
+                            <input
+                                id="email"
+                                type="email"
+                                className="p-2 border border-gray-300 rounded-lg"
+                            />
+                            <label htmlFor="password" className="text-gray-700 mb-1 mt-5">
+                                Password
+                            </label>
+                            <input
+                                className="p-2 border border-gray-300 rounded-lg"
+                                id="password"
+                                type="password"
+                            />
 
-                                <div className="flex items-center justify-center w-full my-2">
+                            <div className="flex items-center justify-center w-full my-2">
 
-                                    <div className="flex-1 border-t border-gray-700 mx-4"></div>
+                                <div className="flex-1 border-t border-gray-700 mx-4"></div>
 
-                                    <span className="text- font-medium">OR</span>
+                                <span className="text- font-medium">OR</span>
 
-                                    <div className="flex-1 border-t border-gray-700 mx-4"></div>
-                                </div>
+                                <div className="flex-1 border-t border-gray-700 mx-4"></div>
                             </div>
+                        </div>
 
                         <button className="flex items-center justify-center w-full max-w-sm mx-auto my-4 p-3 rounded-lg hover:bg-gray-100">
 

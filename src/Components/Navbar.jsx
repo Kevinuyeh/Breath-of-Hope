@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { FaHome, FaVideo, FaHandshake, FaUsers, FaMedal } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
@@ -11,12 +11,6 @@ function Navbar() {
   const handleNav = () => {
     setNav(!nav);
   };
-
-  // const latestvideo1= useRef(null);
-  
-  // const scrollToVideo= () => {
-  //   latestvideo1.current.scrollIntoView({ behavior: 'smooth' });
-  // };
 
   return (
     <div>
@@ -59,28 +53,28 @@ function Navbar() {
         >
 
           <li className='mb-8'>
-            <img src={logo2} alt='/img' className='w-24 ' /> {/* Logo Image */}
+            <img src={logo2} alt='/img' className='w-24 ' />
           </li>
 
 
           <li className='mx-4 my-2 text-xl hover:bg-lightblue hover:text-bluebg border-b-2 border-gray-500 p-2 flex items-center'>
-            <FaHome className='mr-2' /> {/* House icon */}
+            <FaHome className='mr-2' />
             <Link to='/'>Home Page</Link>
           </li>
           <li className='mx-4 my-6 text-xl hover:bg-lightblue hover:text-bluebg border-b-2 border-gray-500 p-2 flex items-center'>
-            <FaVideo className='mr-2' /> {/* Video icon */}
+            <FaVideo className='mr-2' />
             <Link to='/latest-videos'>Latest Videos</Link>
           </li>
           <li className='mx-4 my-6 text-xl hover:bg-lightblue hover:text-bluebg border-b-2 border-gray-500 p-2 flex items-center'>
-            <FaHandshake className='mr-2' /> {/* Handshake icon */}
+            <FaHandshake className='mr-2' />
             <Link to='/sessionpage'>Book Session</Link>
           </li>
           <li className='mx-4 my-6 text-xl hover:bg-lightblue hover:text-bluebg border-b-2 border-gray-500 p-2 flex items-center'>
-            <FaUsers className='mr-2' /> {/* Group icon */}
+            <FaUsers className='mr-2' />
             <Link to='/join-community'>Join Our Community</Link>
           </li>
           <li className='mx-4 my-6 text-xl hover:bg-lightblue hover:text-bluebg border-b-2 border-gray-500 p-2 flex items-center'>
-            <FaMedal className='mr-2' /> {/* Medal icon */}
+            <FaMedal className='mr-2' />
             <Link to='/userleaderboard'>Leader Board</Link>
           </li>
           <li className='mx-4 my-6 text-xl hover:bg-lightblue hover:text-bluebg border-b-2 border-gray-500 p-2'>

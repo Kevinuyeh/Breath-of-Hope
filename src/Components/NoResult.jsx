@@ -5,11 +5,11 @@ import Img from '../Assets/No results found.png'
 function NoResult() {
   return (
     <div className='w-full pb-10'>
-        <div className='flex flex-col font-poppins items-center justify-center'>
-            <h1 className='text-bluebg text-center mt-5 text-2xl md:text-3xl'>No result found</h1>
-            <img src={Img} alt='/img' className='w-[200px]' />
-            <p className='text-dgray text-center max-w-md mt-5 text-xl'>Kindly sign up and join the WhatsApp community to participate  in the BOH leadership board</p>
-            <Link to="/" className="flex justify-center">
+      <div className='flex flex-col font-poppins items-center justify-center'>
+        <h1 className='text-bluebg text-center mt-5 text-2xl md:text-3xl'>No result found</h1>
+        <img src={Img} alt='/img' className='w-[200px]' />
+        <p className='text-dgray text-center max-w-md mt-5 text-xl'>Kindly sign up and join the WhatsApp community to participate  in the BOH leadership board</p>
+        <Link to="/" className="flex justify-center">
           <button className="mt-5 duration-500 hover:text-gray-400 bg-purp text-white p-3 rounded-lg px-5 md:px-10 text-center mx-auto tracking-wide">
             SIGN UP
           </button>
@@ -20,7 +20,7 @@ function NoResult() {
             Join Our WhatsApp Community
           </button>
         </Link>
-        </div>
+      </div>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-// src/leaderboard.js
+
 const adminleaderboardData = [
     
         { id: 1, name: 'George Timmy', totalScore: 1500, clicks: 25 },
@@ -78,7 +78,7 @@ const adminleaderboardData = [
         { id: 75, name: 'Alex Tina', totalScore: 665, clicks: 25 }
     
     
-    // Add more data as needed
+    
   ];
   
   export default adminleaderboardData;
