@@ -30,7 +30,7 @@ function Footer() {
           <ul className='flex flex-col mt-5 text-center'>
             <li><Link to='/'><h1 className='text-white text-xl hover:duration-500 hover:text-lightblue'>Home Page</h1></Link></li>
             <li><Link to='/'><h1 className='text-white text-xl hover:duration-500 hover:text-lightblue'>Latest Videos</h1></Link></li>
-            <li><Link to='/'><h1 className='text-white text-xl hover:duration-500 hover:text-lightblue'>Book Sessions</h1></Link></li>
+            <li><Link to='/sessionpage'><h1 className='text-white text-xl hover:duration-500 hover:text-lightblue'>Book Sessions</h1></Link></li>
           </ul>
         </div>
 
