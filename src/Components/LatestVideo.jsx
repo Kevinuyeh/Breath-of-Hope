@@ -34,7 +34,7 @@ function LatestVideo() {
 
   const videoId = 'ohig84P3aSE';
 
-  // Function to load YouTube Player API
+  
   const loadYouTubeAPI = () => {
     if (!window.YT) {
       const tag = document.createElement('script');
@@ -52,7 +52,7 @@ function LatestVideo() {
         events: {
           onReady: () => {
             const videoElement = videoRef.current;
-            // Attach event listeners for hover to play/pause video
+            
             videoElement.getIframe().addEventListener('mouseenter', handleMouseEnter);
             videoElement.getIframe().addEventListener('mouseleave', handleMouseLeave);
           },
@@ -87,12 +87,12 @@ function LatestVideo() {
         Latest Video
       </h1>
 
-      {/* Video Player */}
+      
       <div className="flex justify-center w-full mt-4">
         <div className="relative w-full h-0 pb-[56.25%] lg:pb-[40%] xl:pb-[35%] max-w-6xl">
           <iframe
             id="youtube-video"
-            src={`https://www.youtube.com/embed/${videoId}?enablejsapi=1`}
+            src={`https://www.youtube.com/embed/${videoId}?enablejsapi=1`} 
             title="YouTube video"
             frameBorder="0"
             allow="autoplay; encrypted-media"
@@ -105,7 +105,7 @@ function LatestVideo() {
       <div className="flex flex-col md:flex-row items-center gap-5 md:gap-10 p-3 md:mt-10 mx-10 md:mx-20">
         <h1 className="font-poppins text-2xl md:text-3xl">Other Videos</h1>
 
-        {/* Search Input */}
+        
         <div className="flex items-center relative md:ml-auto">
           <input
             type="text"
@@ -117,7 +117,7 @@ function LatestVideo() {
           <FaSearch className="absolute right-3 text-gray-500" />
         </div>
 
-        {/* Topic Filter Dropdown */}
+        
         <div className="relative w-full md:w-60" ref={dropdownRef}>
           <div
             onClick={toggleDropdown}
@@ -145,7 +145,7 @@ function LatestVideo() {
         </div>
       </div>
 
-      {/* Video List */}
+      
       <div className="max-w-[1240px] mt-10 md:mt-20 grid grid-cols-2 md:grid-cols-3 gap-5 p-4 mx-auto">
         {videoData.map((item, id) => (
           <div key={id} className="font-poppins flex flex-col border py-2">
@@ -173,4 +173,3 @@ function LatestVideo() {
 }
 
 export default LatestVideo;
-
