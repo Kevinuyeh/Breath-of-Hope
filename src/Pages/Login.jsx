@@ -118,7 +118,7 @@ function Login() {
       await AuthService.login(email, password);
       navigate('/admin'); 
     } catch (error) {
-      setErrorMessage('Login failed. Please check your email and password.');
+      setErrorMessage('Login failed. Invalid credentials.');
     }
   };
 

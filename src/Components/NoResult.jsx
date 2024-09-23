@@ -15,11 +15,11 @@ function NoResult() {
           </button>
         </Link>
 
-        <Link to="/" className="flex justify-center">
+        <a href="https://chat.whatsapp.com/HAP1HqYMtLI6rZGploazja" target='_blank' rel='noopener noreferrer' className="flex justify-center">
           <button className="mt-5 hover:duration-500 hover:bg-darkpurp hover:text-white bg-white border border-darkpurp text-darkpurp p-3 rounded-lg px-5 md:px-10 text-center mx-auto tracking-wide">
             Join Our WhatsApp Community
           </button>
-        </Link>
+        </a>
       </div>
     </div>
   )

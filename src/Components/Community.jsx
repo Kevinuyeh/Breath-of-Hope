@@ -1,7 +1,7 @@
 import React from 'react';
 import Img from '../Assets/image 390.png';
 import WhatsAppLogo from '../Assets/WhatsApp.png';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 function Community() {
   return (
@@ -25,11 +25,11 @@ function Community() {
         <p className="font-poppins text-center mt-5 text-xl text-lgray">
           Be a part of the Breath of Hope Amazing family by joining our Community
         </p>
-        <Link to="/" className="flex justify-center md:justify-start">
+        <a href="https://chat.whatsapp.com/HAP1HqYMtLI6rZGploazja" target='_blank' rel='noopener noreferrer' className="flex justify-center md:justify-start">
           <button className="mt-5 duration-500 hover:text-gray-400 bg-purp text-white p-3 rounded-lg px-5 md:px-10 text-center mx-auto tracking-wide">
             Join Our WhatsApp Community
           </button>
-        </Link>
+        </a>
       </div>
     </div>
   );
