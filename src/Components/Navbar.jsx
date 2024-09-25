@@ -31,7 +31,7 @@ function Navbar() {
 
         <ul className='hidden md:flex md:items-center md:justify-center w-full'>
           <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/'>Home Page</Link></li>
-          <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/'>Latest Videos</Link></li>
+          <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/videopage'>Latest Videos</Link></li>
           <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/sessionpage'>Book Session</Link></li>
           <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><a href='https://chat.whatsapp.com/HAP1HqYMtLI6rZGploazja' target='_blank' rel='noopener noreferrer'>Join Our Community</a></li>
           <li className='mx-4 my-6 md:my-0 text-xl duration-500 hover:text-gray-400'><Link to='/userleaderboard'>Leader Board</Link></li>
@@ -63,7 +63,7 @@ function Navbar() {
           </li>
           <li className='mx-4 my-6 text-xl hover:bg-lightblue hover:text-bluebg border-b-2 border-gray-500 p-2 flex items-center'>
             <FaVideo className='mr-2' />
-            <Link to='/latest-videos'>Latest Videos</Link>
+            <Link to='/videopage'>Latest Videos</Link>
           </li>
           <li className='mx-4 my-6 text-xl hover:bg-lightblue hover:text-bluebg border-b-2 border-gray-500 p-2 flex items-center'>
             <FaHandshake className='mr-2' />

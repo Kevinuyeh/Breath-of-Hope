@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { FaSearch, FaChevronDown, FaYoutube } from 'react-icons/fa';
+import { FaSearch, FaChevronDown, FaYoutube, FaChevronRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import videoData from './VideoInput';
 
@@ -163,9 +163,9 @@ function LatestVideo() {
       </div>
 
       <div className="mt-5 flex mx-auto justify-center items-center gap-2">
-        <Link className="flex items-center gap-2">
+        <Link to="/videopage" className="flex items-center gap-2">
           <h2 className="text-blue2 font-poppins">See More Videos</h2>
-          <FaChevronDown size={12} className="text-blue2" />
+          <FaChevronRight size={12} className="text-blue2" />
         </Link>
       </div>
     </div>

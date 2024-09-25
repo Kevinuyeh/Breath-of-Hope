@@ -29,7 +29,7 @@ function Footer() {
           <h1 className='text-2xl md:text-3xl text-lightblue font-bold'>Pages</h1>
           <ul className='flex flex-col mt-5 text-center'>
             <li><Link to='/'><h1 className='text-white text-xl hover:duration-500 hover:text-lightblue'>Home Page</h1></Link></li>
-            <li><Link to='/'><h1 className='text-white text-xl hover:duration-500 hover:text-lightblue'>Latest Videos</h1></Link></li>
+            <li><Link to='/videopage'><h1 className='text-white text-xl hover:duration-500 hover:text-lightblue'>Latest Videos</h1></Link></li>
             <li><Link to='/sessionpage'><h1 className='text-white text-xl hover:duration-500 hover:text-lightblue'>Book Sessions</h1></Link></li>
           </ul>
         </div>
@@ -48,11 +48,11 @@ function Footer() {
 
 <div className='flex items-center justify-end gap-4 mt-5 p-6'>
   <h1 className='text-white'>Follow us:</h1>
-  <FaInstagram size={40} className='bg-lblue p-2 rounded-lg text-white' />
-  <FaFacebook size={40} className='bg-lblue p-2 rounded-lg text-white' />
-  <FaXTwitter size={40} className='bg-lblue p-2 rounded-lg text-white' />
-  <FaSpotify size={40} className='bg-lblue p-2 rounded-lg text-white' />
-   <img src={YTImg} alt='/img' className='w-[70px]'/>
+ <a href='https://www.instagram.com/akanvictor?igsh=MWpucnFsdGN6bnp5bA==' target='_blank' rel='noopener noreferrer'> <FaInstagram size={40} className='bg-lblue p-2 rounded-lg text-white' /></a>
+  <a href='' target='_blank' rel='noopener noreferrer'><FaFacebook size={40} className='bg-lblue p-2 rounded-lg text-white' /></a>
+  <a href='https://x.com/victorakan70?s=09' target='_blank' rel='noopener noreferrer'><FaXTwitter size={40} className='bg-lblue p-2 rounded-lg text-white' /></a>
+  <a href='https://open.spotify.com/show/0re0leTNwvStIGiDneEQWz?si=6_U7FJCyS26Y5u1eV9_Viw' target='_blank' rel='noopener noreferrer'><FaSpotify size={40} className='bg-lblue p-2 rounded-lg text-white' /></a>
+   <a href='https://youtube.com/@breathofhopepodcast?si=CGRCtOQgeZ9nwkYn' target='_blank' rel='noopener noreferrer'><img src={YTImg} alt='/img' className='w-[70px]'/></a>
 </div>
 
     </div>
