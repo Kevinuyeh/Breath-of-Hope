@@ -159,16 +159,28 @@ function EditVideo() {
                     </div>
                 </div>
 
-                <div className='md:ml-auto mx-auto'>
-                   <Link to='/uploadvideo'> <button
-                        className='flex items-center hover:bg-white hover:text-bluebg border text-center border-bluebg bg-bluebg rounded-lg text-white p-2 mx-4 space-x-2'
-                       
-                    >
-                        <FiUpload size={20} />
-                        <h1>Upload New Video</h1>
-                    </button></Link>
-                    
-                </div>
+                <div className="flex justify-center">
+  <div className="flex flex-col md:flex-row md:ml-auto space-y-4 md:space-y-0 md:space-x-4">
+    <Link to="/uploadvideo">
+      <button
+        className="flex items-center hover:bg-white hover:text-bluebg border text-center border-bluebg bg-bluebg rounded-lg text-white p-2 space-x-2"
+      >
+        <FiUpload size={20} />
+        <h1>Upload New Video Manually</h1>
+      </button>
+    </Link>
+
+    <Link to="/uploadvidlink">
+      <button
+        className="flex items-center hover:bg-white hover:text-bluebg border text-center border-bluebg bg-bluebg rounded-lg text-white p-2 space-x-2"
+      >
+        <FiUpload size={20} />
+        <h1>Upload New Video By Link</h1>
+      </button>
+    </Link>
+  </div>
+</div>
+
             </div>
 
             <div className='flex flex-col mx-auto space-y-4 mt-10 items-center justify-center'>

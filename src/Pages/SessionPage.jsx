@@ -4,6 +4,7 @@ import Image2 from '../Assets/DGU.png';
 import Image3 from '../Assets/love.png';
 import Image4 from '../Assets/better.png';
 import Navbar from '../Components/Navbar';
+import { Link } from 'react-router-dom';
 
 function SessionPage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -72,12 +73,12 @@ function SessionPage() {
               />
             </div>
 
-            <button
+            <Link to='/admin'><button
               type="submit"
               className="bg-purp text-white w-[250px] justify-center flex mx-auto py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300 mt-6"
             >
               Book Session
-            </button>
+            </button></Link>
           </form>
         </div>
 

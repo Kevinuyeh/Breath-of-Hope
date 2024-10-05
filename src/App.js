@@ -11,6 +11,8 @@ import SessionPage from "./Pages/SessionPage";
 import ScrollToTop from "./Components/ScrollToTop";
 import UploadVideo from "./Admin/UploadVideo";
 import VideoPage from "./Pages/VideoPage";
+import UserHome from "./Components/UserHome";
+import UploadVidLink from "./Admin/UploadVidLink";
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" index element={<Home />} />
           <Route path="/admin" element={<AdminHome/>} />
+          <Route path="/userpage" element={<UserHome/>} />
           <Route path="leaderboard" element={<LeaderBoard />} />
           <Route path="login" element={<Login/>} />
           <Route path="signup" element={<SignUp/>} />
@@ -27,6 +30,7 @@ function App() {
           <Route path="userleaderboard" element={<UserLeaderBoard/>} />
           <Route path="sessionpage" element={<SessionPage/>} />
           <Route path="uploadvideo" element={<UploadVideo/>} />
+          <Route path="uploadvidlink" element={<UploadVidLink/>} />
           <Route path="videopage" element={<VideoPage/>} />
         </Routes>
         </ScrollToTop>

@@ -2,56 +2,31 @@ import axios from 'axios';
 
 class AuthService {
   constructor() {
-    
-    this.apiURL = 'https://your-backend-api.com/api';
+    this.api = axios.create({
+      baseURL: 'https://boh-c5a2.onrender.com', // Backend base URL
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
   }
 
-  
-  async signup(userData) {
-    try {
-      const response = await axios.post(`${this.apiURL}/signup`, userData);
-      if (response.data.token) {
-        this.storeToken(response.data.token); 
-      }
-      return response.data;
-    } catch (error) {
-      console.error('Error during signup:', error);
-      throw error.response ? error.response.data : error;
-    }
+  // Login Method
+  login(email, password) {
+    return this.api.post('/login', {
+      email,
+      password,
+    });
   }
 
-  
-  async login(credentials) {
-    try {
-      const response = await axios.post(`${this.apiURL}/login`, credentials);
-      if (response.data.token) {
-        this.storeToken(response.data.token); 
-      }
-      return response.data;
-    } catch (error) {
-      console.error('Error during login:', error);
-      throw error.response ? error.response.data : error;
-    }
-  }
-
-  
-  storeToken(token) {
-    localStorage.setItem('authToken', token);
-  }
-
-  
-  getToken() {
-    return localStorage.getItem('authToken');
-  }
-
-  
-  logout() {
-    localStorage.removeItem('authToken');
-  }
-
-  
-  isAuthenticated() {
-    return !!this.getToken();
+  // Signup Method
+  signUp(firstName, lastName, email, password, confirmPassword) {
+    return this.api.post('/register', {
+      first_name: firstName,
+      last_name: lastName,
+      email,
+      password,
+      confirm_password: confirmPassword,
+    });
   }
 }
 
